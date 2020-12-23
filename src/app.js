@@ -1,8 +1,14 @@
 import React, { Component } from "react";
+import DiffSelector from "./components/diffSelector.js";
+
 class App extends Component {
   state = {};
   render() {
-    return <h1>Hi!</h1>;
+    return (
+      <React.Fragment>
+        <DiffSelector />
+      </React.Fragment>
+    );
   }
 }
 

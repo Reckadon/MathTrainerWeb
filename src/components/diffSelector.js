@@ -4,7 +4,9 @@ class DiffSelector extends Component {
   render() {
     return (
       <div>
-        <h1>Diff selector</h1>
+        <button> Easy </button>
+        <button> Medium </button>
+        <button> Hard </button>
       </div>
     );
   }
