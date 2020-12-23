@@ -8,7 +8,7 @@ class App extends Component {
   };
 
   handleDiffSelection = (diff) => {
-    this.setState({ diff }, () => console.log(this.state));
+    this.setState({ diff });
   };
 
   render() {
