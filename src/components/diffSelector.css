@@ -7,6 +7,7 @@
   margin-top: 10px;
   display: block;
   border-radius: 20px;
+  border: 1px solid rgb(16, 235, 158);
   padding: 15px;
   width: 100%;
   color: rgb(0, 0, 0);
@@ -19,6 +20,10 @@
     rgba(0, 255, 106, 1) 100%
   );
 }
+.diffButton:hover {
+  transform: scale(1.001, 1.1);
+}
+
 #selectDiffLabel {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;

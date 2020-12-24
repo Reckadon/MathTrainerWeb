@@ -10,11 +10,14 @@ class App extends Component {
   handleDiffSelection = (diff) => {
     this.setState({ diff });
   };
+  handleBack = () => {
+    this.setState({ diff: null });
+  };
 
   render() {
     return (
       <React.Fragment>
-        <NavBar difficulty={this.state.diff} />
+        <NavBar difficulty={this.state.diff} onBack={this.handleBack} />
         <div className="container">{this.getContent()}</div>
       </React.Fragment>
     );

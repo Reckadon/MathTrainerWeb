@@ -6,6 +6,19 @@ nav {
   padding: 20px;
   background-color: rgb(207, 26, 26);
 }
+nav button {
+  height: 35px;
+  width: 35px;
+  margin-right: 8px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+nav button:hover {
+  filter: brightness(20%);
+}
+.secondNav {
+  padding: 14px;
+}
 
 body {
   margin: 0px;
@@ -14,4 +27,14 @@ body {
 .container {
   text-align: center;
   padding: 5px;
+}
+button:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 600px) {
+  /*large screens*/
+  .secondNav {
+    padding: 16px;
+  }
 }
