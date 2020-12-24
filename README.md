@@ -1,1 +1,1 @@
-#Web Version of MathTrainer
+<h2>Web Version of MathTrainer</h2>
