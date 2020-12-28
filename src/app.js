@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DiffSelector from "./components/diffSelector.js";
 import NavBar from "./components/navbar";
+import Game from "./components/Game";
 
 class App extends Component {
   state = {
@@ -28,7 +29,7 @@ class App extends Component {
     if (this.state.diff === null) {
       content = <DiffSelector onDiffSelected={this.handleDiffSelection} />;
     } else {
-      content = <h1>Selected</h1>;
+      content = <Game />;
     }
     return content;
   }
