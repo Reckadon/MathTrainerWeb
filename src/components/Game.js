@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import ProgressBar from "./progressBar.js";
-import "./Game.css";
+import Card from "./card";
+import "./styles/Game.css";
 
 class Game extends Component {
   state = {
     timeLeft: 60, //initial time
+    buttonText: "START",
+    isStarted: false,
   };
 
   render() {
@@ -15,17 +18,28 @@ class Game extends Component {
           runs out of Time!
         </h4>
         <ProgressBar value={this.state.timeLeft} />
-        <button className="startButton" onClick={() => this.start()}>
-          START
+        <Card />
+        <button
+          disabled={this.state.isStarted}
+          className="startButton"
+          onClick={() => this.start()}
+        >
+          {this.state.buttonText}
         </button>
       </React.Fragment>
     );
   }
   start() {
-    setInterval(() => {
+    if (this.state.buttonText === "RESET") {
+      this.setState({ timeLeft: 60, buttonText: "START" });
+      return;
+    }
+    this.setState({ isStarted: true });
+    const timer = setInterval(() => {
       this.setState({ timeLeft: this.state.timeLeft - 1 }, () => {
-        if (this.state.timeLeft === 0) {
-          clearInterval();
+        if (this.state.timeLeft < 0) {
+          clearInterval(timer);
+          this.setState({ buttonText: "RESET", isStarted: false });
         }
       });
     }, 1000);

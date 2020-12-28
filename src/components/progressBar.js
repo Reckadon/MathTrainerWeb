@@ -4,7 +4,7 @@ class ProgressBar extends Component {
   render() {
     return (
       <React.Fragment>
-        <h2>{this.props.value < 0 ? "Times Up!" : this.props.value}</h2>
+        <h2>{this.props.value < 0 ? "Time's Up!!" : this.props.value}</h2>
         <div className="bar">
           <div
             className="progress"

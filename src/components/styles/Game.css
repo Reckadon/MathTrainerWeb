@@ -18,10 +18,11 @@ h2 {
   width: 100%;
   height: 100%;
   background-color: rgb(39, 208, 232);
+  transition: width 1s linear;
 }
 .startButton {
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   display: block;
   border-radius: 10px;
   border: 1px solid rgb(16, 235, 158);
@@ -36,6 +37,8 @@ h2 {
     rgba(16, 235, 159, 1) 67%,
     rgba(0, 255, 106, 1) 100%
   );
+  box-shadow: 6px 6px 8px #252525;
+  transition: transform 0.1s;
 }
 .startButton:hover {
   background: linear-gradient(
@@ -45,6 +48,20 @@ h2 {
     rgb(4, 255, 108) 100%
   );
 }
+.startButton:active {
+  transform: translateY(4px);
+  box-shadow: 2px 2px 4px #252525;
+}
+.startButton:disabled {
+  background: linear-gradient(
+    90deg,
+    rgb(30, 134, 148) 0%,
+    rgb(10, 185, 124) 67%,
+    rgb(4, 156, 67) 100%
+  );
+  border: 1px solid rgb(53, 156, 120);
+}
+
 @media only screen and (min-width: 600px) {
   .bar {
     margin: auto;

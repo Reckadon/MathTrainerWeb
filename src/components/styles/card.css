@@ -1,0 +1,28 @@
+.card {
+  text-align: start;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 98%;
+  height: 330px;
+  background: rgb(87, 87, 87);
+  box-shadow: 0px 4px 8px rgb(39, 39, 39);
+}
+.card h4 {
+  margin: 0px;
+  padding: 10px 0px 0px 10px;
+  font-size: large;
+  color: rgb(177, 177, 177);
+}
+.card h2 {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    width: 40%;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./diffSelector.css";
+import "./styles/diffSelector.css";
 
 class DiffSelector extends Component {
   render() {
