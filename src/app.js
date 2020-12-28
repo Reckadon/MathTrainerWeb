@@ -29,7 +29,7 @@ class App extends Component {
     if (this.state.diff === null) {
       content = <DiffSelector onDiffSelected={this.handleDiffSelection} />;
     } else {
-      content = <Game />;
+      content = <Game diff={this.state.diff} />;
     }
     return content;
   }

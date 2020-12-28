@@ -18,7 +18,7 @@ class Game extends Component {
           runs out of Time!
         </h4>
         <ProgressBar value={this.state.timeLeft} />
-        <Card />
+        <Card isStarted={this.state.isStarted} diff={this.props.diff} />
         <button
           disabled={this.state.isStarted}
           className="startButton"
