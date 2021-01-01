@@ -83,6 +83,8 @@ class Card extends Component {
         case "Hard":
           multiplier = 1000;
           break;
+        default:
+          break;
       }
     } else {
       multiplier = 100;
@@ -101,6 +103,8 @@ class Card extends Component {
         break;
       case " x ":
         question = x + " x " + y;
+        break;
+      default:
         break;
     }
     this.setState({ question });
@@ -137,6 +141,8 @@ class Card extends Component {
           break;
         case "Hard":
           points = 30;
+          break;
+        default:
           break;
       }
       this.generateQuestion();
