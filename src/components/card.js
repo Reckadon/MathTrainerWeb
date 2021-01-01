@@ -120,6 +120,8 @@ class Card extends Component {
       case " x ":
         answer = x * y;
         break;
+      default:
+        break;
     }
     this.setState({ answer });
   }
