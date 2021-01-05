@@ -22,7 +22,9 @@ class Game extends Component {
           isStarted={this.state.isStarted}
           diff={this.props.diff}
           buttonText={this.state.buttonText}
+          onEnded={this.props.onEnded}
         />
+        <h3 className="highScore">High Score: {this.props.highScore}</h3>
         <button
           disabled={this.state.isStarted}
           className="startButton"

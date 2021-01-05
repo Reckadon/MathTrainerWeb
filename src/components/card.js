@@ -15,6 +15,7 @@ class Card extends Component {
       this.setState({ running: true });
       this.generateQuestion();
     } else if (!this.props.isStarted && this.state.running) {
+      this.props.onEnded(this.state.points);
       this.setState({
         running: false,
         question: "",
@@ -48,7 +49,6 @@ class Card extends Component {
           onKeyPress={this.handleKeyPress}
           disabled={!this.state.running}
           id="input"
-          value={this.state.running ? null : ""}
           type="number"
           onChange={(event) => {
             this.setState({ entered: event.target.value });

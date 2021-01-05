@@ -32,6 +32,12 @@ button:focus {
   outline: none;
 }
 
+h3.highScore {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 38, 0);
+  font-weight: 400;
+}
+
 @media only screen and (min-width: 600px) {
   /*large screens*/
   .secondNav {
