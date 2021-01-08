@@ -1,5 +1,5 @@
 .buttonsGrp {
-  margin-top: 40%;
+  width: 100%;
 }
 
 .diffButton {
@@ -34,9 +34,7 @@
 
 @media only screen and (min-width: 600px) {
   /*large screens*/
-  .buttonsGrp {
-    margin-top: 10%;
-  }
+
   .diffButton {
     width: 40%;
   }
